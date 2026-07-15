@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Buka Pengaturan" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Default" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Kendaraan Orang Ke-1" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Kendaraan Orang Ke-3" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Pemain Orang Ke-1" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Pemain Orang Ke-3" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Gunakan Profil" />
+    <e k="cameraDof_nearEnabled" v="Buram Dekat" />
+    <e k="cameraDof_applyToSky" v="Terapkan ke Langit" />
+    <e k="cameraDof_nearSection" v="Parameter Dekat" />
+    <e k="cameraDof_farSection" v="Parameter Jauh" />
+    <e k="cameraDof_nearCoCRadius" v="Radius CoC Dekat" />
+    <e k="cameraDof_nearBlurEnd" v="Akhir Buram Dekat" />
+    <e k="cameraDof_farCoCRadius" v="Radius CoC Jauh" />
+    <e k="cameraDof_farBlurStart" v="Mulai Buram Jauh" />
+    <e k="cameraDof_farBlurEnd" v="Akhir Buram Jauh" />
+  </elements>
+</l10n>

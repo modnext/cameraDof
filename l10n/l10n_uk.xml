@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Відкрити налаштування" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="За замовчуванням" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Профіль" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Транспорт: 1-а особа" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Транспорт: 3-я особа" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Гравець: 1-а особа" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Гравець: 3-я особа" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Використовувати профіль" />
+    <e k="cameraDof_nearEnabled" v="Ближнє розмиття" />
+    <e k="cameraDof_applyToSky" v="Застосувати до неба" />
+    <e k="cameraDof_nearSection" v="Ближні параметри" />
+    <e k="cameraDof_farSection" v="Дальні параметри" />
+    <e k="cameraDof_nearCoCRadius" v="Ближній радіус CoC" />
+    <e k="cameraDof_nearBlurEnd" v="Кінець ближнього розмиття" />
+    <e k="cameraDof_farCoCRadius" v="Дальній радіус CoC" />
+    <e k="cameraDof_farBlurStart" v="Початок дальнього розмиття" />
+    <e k="cameraDof_farBlurEnd" v="Кінець дальнього розмиття" />
+  </elements>
+</l10n>

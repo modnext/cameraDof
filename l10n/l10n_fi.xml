@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Avaa asetukset" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Oletukset" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profiili" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Ajoneuvo 1. persoona" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Ajoneuvo 3. persoona" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Pelaaja 1. persoona" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Pelaaja 3. persoona" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Käytä profiilia" />
+    <e k="cameraDof_nearEnabled" v="Lähisumennus" />
+    <e k="cameraDof_applyToSky" v="Käytä taivaaseen" />
+    <e k="cameraDof_nearSection" v="Lähialueen parametrit" />
+    <e k="cameraDof_farSection" v="Kaukoalueen parametrit" />
+    <e k="cameraDof_nearCoCRadius" v="Lähialueen CoC-säde" />
+    <e k="cameraDof_nearBlurEnd" v="Lähisumennuksen loppu" />
+    <e k="cameraDof_farCoCRadius" v="Kaukoalueen CoC-säde" />
+    <e k="cameraDof_farBlurStart" v="Kaukosumennuksen alku" />
+    <e k="cameraDof_farBlurEnd" v="Kaukosumennuksen loppu" />
+  </elements>
+</l10n>

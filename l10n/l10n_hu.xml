@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Beállítások megnyitása" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Alapértelmezett" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Jármű belső nézet" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Jármű külső nézet" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Játékos belső nézet" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Játékos külső nézet" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Profil használata" />
+    <e k="cameraDof_nearEnabled" v="Közeli elmosódás" />
+    <e k="cameraDof_applyToSky" v="Alkalmazás az égre" />
+    <e k="cameraDof_nearSection" v="Közeli paraméterek" />
+    <e k="cameraDof_farSection" v="Távoli paraméterek" />
+    <e k="cameraDof_nearCoCRadius" v="Közeli CoC sugár" />
+    <e k="cameraDof_nearBlurEnd" v="Közeli elmosódás vége" />
+    <e k="cameraDof_farCoCRadius" v="Távoli CoC sugár" />
+    <e k="cameraDof_farBlurStart" v="Távoli elmosódás kezdete" />
+    <e k="cameraDof_farBlurEnd" v="Távoli elmosódás vége" />
+  </elements>
+</l10n>

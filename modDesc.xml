@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="110">
+  <author>aaw3k</author>
+  <version>1.0.0.0</version>
+
+  <title>
+    <en>Camera DoF</en>
+  </title>
+
+  <description>
+    <en><![CDATA[
+Adds cinematic depth to your gameplay by taking full control over the camera's depth-of-field effect. Instead of relying on the game's default blur settings, you can now fine-tune near and far blur independently for every camera perspective and see the changes in real time.
+
+Features:
+- Configure 4 separate blur profiles: Vehicle 1st Person, Vehicle 3rd Person, Player 1st Person, and Player 3rd Person.
+- Adjust near and far blur parameters including CoC radius, blur distances, and sky application.
+- Enable or disable each profile individually — disabled profiles fall back to the game's default DOF.
+- Reset any profile to built-in defaults with a single click. Settings are saved automatically.
+
+Hotkeys:
+- Press 'F6' to open the Camera DoF settings dialog.
+
+For more info, bug reports, or to contribute, check out GitHub (modnext/cameraDof).
+]]></en>
+    <de><![CDATA[
+Verleiht deinem Spiel filmische Tiefe, indem du den Tiefenschärfe-Effekt der Kamera vollständig selbst steuerst. Anstatt dich auf die Standard-Unschärfe des Spiels zu verlassen, kannst du nun Nah- und Fernunschärfe für jede Kameraperspektive unabhängig anpassen und die Änderungen in Echtzeit sehen.
+
+Funktionen:
+- Konfiguriere 4 separate Unschärfe-Profile: Fahrzeug Ego-Perspektive, Fahrzeug Dritte Person, Spieler Ego-Perspektive und Spieler Dritte Person.
+- Passe Nah- und Fernunschärfe-Parameter an, darunter CoC-Radius, Unschärfe-Distanzen und Himmelsanwendung.
+- Aktiviere oder deaktiviere jedes Profil einzeln — deaktivierte Profile verwenden die Standard-Tiefenschärfe des Spiels.
+- Setze jedes Profil mit einem Klick auf Standardwerte zurück. Einstellungen werden automatisch gespeichert.
+
+Tastenkombinationen:
+- Drücke 'F6', um den Einstellungsdialog für die Kamera-Unschärfe zu öffnen.
+
+Für mehr Infos, Fehlermeldungen oder kleine Beiträge schau einfach auf GitHub vorbei (modnext/cameraDof).
+]]></de>
+    <fr><![CDATA[
+Ajoute de la profondeur cinématique à votre jeu en prenant le contrôle total de l'effet de profondeur de champ de la caméra. Au lieu de vous fier aux réglages de flou par défaut du jeu, vous pouvez désormais affiner le flou de près et de loin indépendamment pour chaque perspective de caméra et voir les changements en temps réel.
+
+Fonctionnalités :
+- Configurez 4 profils de flou distincts : Véhicule 1ère Personne, Véhicule 3ème Personne, Joueur 1ère Personne et Joueur 3ème Personne.
+- Ajustez les paramètres de flou de près et de loin, y compris le rayon CoC, les distances de flou et l'application au ciel.
+- Activez ou désactivez chaque profil individuellement — les profils désactivés utilisent la profondeur de champ par défaut du jeu.
+- Réinitialisez n'importe quel profil aux valeurs par défaut en un seul clic. Les réglages sont sauvegardés automatiquement.
+
+Raccourcis clavier :
+- Appuyez sur 'F6' pour ouvrir la boîte de dialogue des réglages du flou de caméra.
+
+Pour plus d'infos, signaler un bug ou apporter votre aide, rendez-vous sur GitHub (modnext/cameraDof).
+]]></fr>
+    <pl><![CDATA[
+Dodaje kinową głębię do swojej rozgrywki, przejmując pełną kontrolę nad efektem głębi ostrości kamery. Zamiast polegać na domyślnych ustawieniach rozmycia w grze, możesz teraz niezależnie dostosowywać rozmycie bliskie i dalekie dla każdej perspektywy kamery i widzieć zmiany w czasie rzeczywistym.
+
+Funkcje:
+- Konfiguruj 4 osobne profile rozmycia: Pojazd 1. osoba, Pojazd 3. osoba, Gracz 1. osoba i Gracz 3. osoba.
+- Dostosuj parametry rozmycia bliskiego i dalekiego, w tym promień CoC, odległości rozmycia oraz zastosowanie na niebie.
+- Włączaj lub wyłączaj każdy profil niezależnie — wyłączone profile korzystają z domyślnej głębi ostrości gry.
+- Zresetuj dowolny profil do wartości domyślnych jednym kliknięciem. Ustawienia zapisywane są automatycznie.
+
+Skróty klawiszowe:
+- Wciśnij 'F6', aby otworzyć okno ustawień rozmycia kamery.
+
+Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moim GitHubie (modnext/cameraDof).
+]]></pl>
+    <ru><![CDATA[
+Добавляет кинематографическую глубину в вашу игру, взяв полный контроль над эффектом глубины резкости камеры. Вместо того чтобы полагаться на стандартные настройки размытия, теперь вы можете независимо настраивать ближнее и дальнее размытие для каждой перспективы камеры и видеть изменения в реальном времени.
+
+Особенности:
+- Настройте 4 отдельных профиля размытия: Транспорт от 1-го лица, Транспорт от 3-го лица, Игрок от 1-го лица и Игрок от 3-го лица.
+- Регулируйте параметры ближнего и дальнего размытия, включая радиус CoC, расстояния размытия и применение к небу.
+- Включайте или отключайте каждый профиль по отдельности — отключённые профили используют стандартную глубину резкости игры.
+- Сбросьте любой профиль к значениям по умолчанию одним нажатием. Настройки сохраняются автоматически.
+
+Горячие клавиши:
+- Нажмите 'F6', чтобы открыть диалоговое окно настроек размытия камеры.
+
+Для получения дополнительной информации, сообщений об ошибках или участия загляните на GitHub (modnext/cameraDof).
+]]></ru>
+  </description>
+
+  <l10n filenamePrefix="l10n/l10n" />
+
+  <iconFilename>icon_cameraDof.dds</iconFilename>
+  <multiplayer supported="true" />
+
+  <extraSourceFiles>
+    <sourceFile filename="scripts/CameraDofSystem.lua" />
+    <sourceFile filename="scripts/gui/CameraDofDialog.lua" />
+  </extraSourceFiles>
+
+  <actions>
+    <action name="CAMERA_DOF_SETTINGS" axisType="HALF" />
+  </actions>
+
+  <inputBinding>
+    <actionBinding action="CAMERA_DOF_SETTINGS">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_f6" />
+    </actionBinding>
+  </inputBinding>
+</modDesc>

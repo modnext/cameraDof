@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="" />
+    <e k="cameraDof_resetProfile" v="" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="" />
+    <e k="cameraDof_profile_playerFirstPerson" v="" />
+    <e k="cameraDof_profile_playerThirdPerson" v="" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="" />
+    <e k="cameraDof_nearEnabled" v="" />
+    <e k="cameraDof_applyToSky" v="" />
+    <e k="cameraDof_nearSection" v="" />
+    <e k="cameraDof_farSection" v="" />
+    <e k="cameraDof_nearCoCRadius" v="" />
+    <e k="cameraDof_nearBlurEnd" v="" />
+    <e k="cameraDof_farCoCRadius" v="" />
+    <e k="cameraDof_farBlurStart" v="" />
+    <e k="cameraDof_farBlurEnd" v="" />
+  </elements>
+</l10n>

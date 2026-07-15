@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="설정 열기" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="기본값" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="프로필" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="차량 1인칭" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="차량 3인칭" />
+    <e k="cameraDof_profile_playerFirstPerson" v="플레이어 1인칭" />
+    <e k="cameraDof_profile_playerThirdPerson" v="플레이어 3인칭" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="프로필 사용" />
+    <e k="cameraDof_nearEnabled" v="근접 블러" />
+    <e k="cameraDof_applyToSky" v="하늘에 적용" />
+    <e k="cameraDof_nearSection" v="근접 매개변수" />
+    <e k="cameraDof_farSection" v="원거리 매개변수" />
+    <e k="cameraDof_nearCoCRadius" v="근접 CoC 반경" />
+    <e k="cameraDof_nearBlurEnd" v="근접 블러 종료" />
+    <e k="cameraDof_farCoCRadius" v="원거리 CoC 반경" />
+    <e k="cameraDof_farBlurStart" v="원거리 블러 시작" />
+    <e k="cameraDof_farBlurEnd" v="원거리 블러 종료" />
+  </elements>
+</l10n>

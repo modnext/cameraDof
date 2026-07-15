@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+  <GuiElement profile="newLayer"/>
+
+  <ThreePartBitmap profile="cameraDofContainerBg" id="dialogElement">
+    <Bitmap profile="cameraDofContainerArrow" />
+
+    <GuiElement profile="cameraDofContainerContent" id="contentContainer">
+      <Bitmap profile="fs25_dialogLine" id="topLineLeft" position="0 45px"/>
+      <Bitmap profile="fs25_dialogLineRight" id="topLineRight" position="0 45px"/>
+      <Text profile="fs25_dialogTitle" id="headerText" text="$l10n_cameraDof_dialogTitle" position="0 60px"/>
+
+      <!-- Profile Selector -->
+      <Bitmap profile="cameraDofProfileSelectorContainer">
+        <MultiTextOption profile="cameraDofProfileSelector" id="profileSelector" onClick="onClickProfileSelector" focusInit="onOpen"/>
+      </Bitmap>
+
+      <!-- Settings -->
+      <BoxLayout profile="cameraDofSettingsBox">
+        <Bitmap profile="cameraDofToggleContainer">
+          <BinaryOption profile="cameraDofBinaryOption" id="enabled" onClick="onToggleChanged"/>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_enabled"/>
+        </Bitmap>
+
+        <!-- Far Section -->
+        <ThreePartBitmap profile="cameraDofSeparator"/>
+        <Text profile="cameraDofSectionHeader" text="$l10n_cameraDof_farSection"/>
+
+        <Bitmap profile="cameraDofSliderContainer">
+          <OptionSlider profile="cameraDofOptionSlider" id="farCoCRadius" onClick="onSliderChanged">
+            <ThreePartBitmap profile="cameraDofOptionSliderBg" name="ignore">
+              <ThreePartBitmap profile="cameraDofOutlineBg"/>
+            </ThreePartBitmap>
+          </OptionSlider>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_farCoCRadius"/>
+        </Bitmap>
+        <Bitmap profile="cameraDofSliderContainer">
+          <OptionSlider profile="cameraDofOptionSlider" id="farBlurStart" onClick="onSliderChanged">
+            <ThreePartBitmap profile="cameraDofOptionSliderBg" name="ignore">
+              <ThreePartBitmap profile="cameraDofOutlineBg"/>
+            </ThreePartBitmap>
+          </OptionSlider>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_farBlurStart"/>
+        </Bitmap>
+        <Bitmap profile="cameraDofSliderContainer">
+          <OptionSlider profile="cameraDofOptionSlider" id="farBlurEnd" onClick="onSliderChanged">
+            <ThreePartBitmap profile="cameraDofOptionSliderBg" name="ignore">
+              <ThreePartBitmap profile="cameraDofOutlineBg"/>
+            </ThreePartBitmap>
+          </OptionSlider>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_farBlurEnd"/>
+        </Bitmap>
+        <Bitmap profile="cameraDofToggleContainer">
+          <BinaryOption profile="cameraDofBinaryOption" id="applyToSky" onClick="onToggleChanged"/>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_applyToSky"/>
+        </Bitmap>
+
+        <!-- Near Section -->
+        <ThreePartBitmap profile="cameraDofSeparator"/>
+        <Text profile="cameraDofSectionHeader" text="$l10n_cameraDof_nearSection"/>
+
+        <Bitmap profile="cameraDofToggleContainer">
+          <BinaryOption profile="cameraDofBinaryOption" id="nearEnabled" onClick="onToggleChanged"/>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_nearEnabled"/>
+        </Bitmap>
+        <Bitmap profile="cameraDofSliderContainer">
+          <OptionSlider profile="cameraDofOptionSlider" id="nearCoCRadius" onClick="onSliderChanged">
+            <ThreePartBitmap profile="cameraDofOptionSliderBg" name="ignore">
+              <ThreePartBitmap profile="cameraDofOutlineBg"/>
+            </ThreePartBitmap>
+          </OptionSlider>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_nearCoCRadius"/>
+        </Bitmap>
+        <Bitmap profile="cameraDofSliderContainer">
+          <OptionSlider profile="cameraDofOptionSlider" id="nearBlurEnd" onClick="onSliderChanged">
+            <ThreePartBitmap profile="cameraDofOptionSliderBg" name="ignore">
+              <ThreePartBitmap profile="cameraDofOutlineBg"/>
+            </ThreePartBitmap>
+          </OptionSlider>
+          <Text profile="cameraDofSettingTitle" text="$l10n_cameraDof_nearBlurEnd"/>
+        </Bitmap>
+      </BoxLayout>
+    </GuiElement>
+
+    <!-- Footer Buttons -->
+    <BoxLayout profile="fs25_dialogButtonBox" id="buttonsBox" alignmentX="left" position="-6px 30px">
+      <Button profile="buttonBack" id="backButton" text="$l10n_button_back" onClick="onClickBack">
+        <Bitmap profile="fs25_dialogButtonBoxSeparator"/>
+      </Button>
+      <Button profile="buttonDelete" id="resetButton" text="$l10n_cameraDof_resetProfile" onClick="onClickReset"/>
+    </BoxLayout>
+  </ThreePartBitmap>
+
+  <GUIProfiles>
+    <Profile name="cameraDofContainerBg" extends="fs25_subCategoryContainerBg">
+      <imageSliceId value="gui.buildMode_left" />
+      <endImageSliceId value="gui.buildMode_down" />
+    </Profile>
+    <Profile name="cameraDofContainerArrow" extends="fs25_subCategoryContainerArrow">
+      <imageSliceId value="gui.buildMode_middle" />
+    </Profile>
+    <Profile name="cameraDofContainerContent" extends="emptyPanel" with="anchorTopCenter">
+      <absoluteSizeOffset value="120px 540px" />
+      <position value="-25px -110px" />
+    </Profile>
+
+    <!-- Profile Selector -->
+    <Profile name="cameraDofProfileSelector" extends="fs25_multiTextOption" with="anchorMiddleRight">
+      <size value="100% 46px"/>
+      <defaultProfileText value="cameraDofProfileSelectorText"/>
+      <defaultProfileBgThreePart value="emptyPanel"/>
+    </Profile>
+    <Profile name="cameraDofProfileSelectorText" extends="fs25_multiTextOptionText">
+      <textSize value="16px"/>
+      <textFocusedColor value="$preset_fs25_colorMainHighlight"/>
+      <textHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+    </Profile>
+    <Profile name="cameraDofProfileSelectorContainer" extends="cameraDofToggleContainer">
+      <position value="0 55px"/>
+    </Profile>
+
+    <!-- Settings General -->
+    <Profile name="cameraDofSettingsBox" extends="emptyPanel" with="anchorTopCenter">
+      <size value="100% 820px"/>
+      <position value="0 -20px"/>
+      <flowDirection value="vertical"/>
+      <fitFlowToElements value="true"/>
+    </Profile>
+    <Profile name="cameraDofSectionHeader" extends="fs25_textDefault" with="anchorTopStretchingX">
+      <height value="30px"/>
+      <margin value="0 14px 0 14px"/>
+      <textSize value="16px"/>
+      <textBold value="true"/>
+      <textUpperCase value="true"/>
+      <textColor value="$preset_fs25_colorGreyText"/>
+    </Profile>
+    <Profile name="cameraDofToggleContainer" extends="baseReference" with="anchorTopStretchingX">
+      <height value="65px"/>
+      <margin value="0 0 0 18px"/>
+      <imageSliceId value="gui.empty"/>
+      <imageColor value="$preset_fs25_colorGreyListItem"/>
+    </Profile>
+    <Profile name="cameraDofSliderContainer" extends="cameraDofToggleContainer"/>
+    <Profile name="cameraDofSettingTitle" extends="fs25_textDefault" with="anchorTopLeft">
+      <size value="100% 26px"/>
+      <textSize value="17px"/>
+      <textBold value="true"/>
+      <textUpperCase value="true"/>
+      <textLayoutMode value="resize"/>
+    </Profile>
+    <Profile name="cameraDofBinaryOption" extends="fs25_binaryOption" with="anchorBottomStretchingX">
+      <width value="100%"/>
+      <useYesNoTexts value="nil"/>
+    </Profile>
+    <Profile name="cameraDofSeparator" extends="baseReference" with="anchorTopStretchingX pivotTopLeft">
+      <height value="2dp"/>
+      <imageColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+
+    <!-- Option Slider -->
+    <Profile name="cameraDofOptionSlider" extends="fs25_optionSlider" with="anchorBottomStretchingX">
+      <size value="100% 32px"/>
+      <wrap value="false"/>
+      <continuousInputStep value="1"/>
+      <sliderOffset value="0"/>
+      <useFillingBar value="false"/>
+      <updateTextPosition value="true"/>
+      <hideLeftRightButtons value="false"/>
+      <defaultProfileText value="cameraDofOptionSliderText"/>
+      <defaultProfileSlider value="cameraDofOptionSliderThumb"/>
+      <defaultProfileFillingBar value="cameraDofOptionSliderFillingBar"/>
+      <defaultProfileButtonLeft value="cameraDofOptionLeft"/>
+      <defaultProfileButtonRight value="cameraDofOptionRight"/>
+    </Profile>
+    <Profile name="cameraDofOptionSliderBg" extends="baseReference" with="anchorMiddleCenter">
+      <absoluteSizeOffset value="-73px 0"/>
+      <imageSliceId value="gui.3dShop_button_middle"/>
+      <imageColor value="$preset_fs25_colorGrey"/>
+      <startImageSize value="6px 0"/>
+      <startImageSliceId value="gui.3dShop_button_left"/>
+      <startImageColor value="$preset_fs25_colorGrey"/>
+      <endImageSize value="6px 0"/>
+      <endImageSliceId value="gui.3dShop_button_right"/>
+      <endImageColor value="$preset_fs25_colorGrey"/>
+    </Profile>
+    <Profile name="cameraDofOutlineBg" extends="baseReference" with="pivotMiddleLeft">
+      <position value="22px 0"/>
+      <absoluteSizeOffset value="45px 0"/>
+      <imageColor value="$preset_fs25_colorGreyDark"/>
+      <imageDisabledColor value="$preset_fs25_colorGreyDark"/>
+      <startImageSize value="10px 0"/>
+      <startImageColor value="$preset_fs25_colorGreyDark"/>
+      <startImageDisabledColor value="$preset_fs25_colorGreyDark"/>
+      <endImageSize value="10px 0"/>
+      <endImageColor value="$preset_fs25_colorGreyDark"/>
+      <endImageDisabledColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+    <Profile name="cameraDofOptionSliderThumb" extends="baseReference" with="anchorMiddleLeft">
+      <size value="65px 20px"/>
+      <cornerSize value="0"/>
+      <imageColor value="$preset_fs25_colorGreyBinarySlider"/>
+      <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+      <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+      <imagePressedColor value="$preset_colorWhite"/>
+      <imageDisabledColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+    <Profile name="cameraDofOptionSliderText" extends="fs25_textDefault" with="anchorStretchingYStretchingX">
+      <size value="100% 100%"/>
+      <absoluteSizeOffset value="50px 0"/>
+      <textSize value="16px"/>
+      <textMaxNumLines value="1"/>
+      <textUpperCase value="false"/>
+      <textAlignment value="center"/>
+      <textLayoutMode value="scrolling"/>
+      <textScrollOnFocusOnly value="true"/>
+      <textColor value="$preset_fs25_colorMainDark"/>
+    </Profile>
+    <Profile name="cameraDofOptionSliderFillingBar" extends="baseReference" with="anchorMiddleStretchingX pivotMiddleLeft">
+      <imageColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+    <Profile name="cameraDofOptionLeft" extends="buttonBase" with="anchorStretchingYLeft">
+      <size value="40px 100%"/>
+      <position value="-37px 0"/>
+      <clickSound value="NONE"/>
+      <sendActionOnRelease value="false"/>
+      <iconRotation value="180"/>
+      <iconSize value="7px 8px"/>
+      <iconTextOffset value="-7px 0"/>
+      <iconSliceId value="gui.3dShop_arrow"/>
+      <iconColor value="$preset_fs25_colorGreyText"/>
+      <iconHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+      <iconFocusedColor value="$preset_fs25_colorMainHighlight"/>
+      <iconPressedColor value="$preset_fs25_colorMainHighlight"/>
+      <iconDisabledColor value="$preset_fs25_colorGreyDark"/>
+      <imageSliceId value="noSlice"/>
+      <imageColor value="0 0 0 0"/>
+      <imageHighlightedColor value="0 0 0 0"/>
+      <imageFocusedColor value="0 0 0 0"/>
+      <imageSelectedColor value="0 0 0 0"/>
+      <imageDisabledColor value="0 0 0 0"/>
+    </Profile>
+    <Profile name="cameraDofOptionRight" extends="cameraDofOptionLeft" with="anchorStretchingYRight">
+      <position value="37px 0"/>
+      <iconRotation value="0"/>
+      <iconTextOffset value="7px 0"/>
+    </Profile>
+  </GUIProfiles>
+</GUI>

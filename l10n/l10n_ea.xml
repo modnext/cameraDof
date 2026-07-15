@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Abrir Ajustes" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Predeterminado" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Perfil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Vehículo 1.ª persona" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Vehículo 3.ª persona" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Jugador 1.ª persona" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Jugador 3.ª persona" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Usar perfil" />
+    <e k="cameraDof_nearEnabled" v="Desenfoque cercano" />
+    <e k="cameraDof_applyToSky" v="Aplicar al cielo" />
+    <e k="cameraDof_nearSection" v="Parámetros cercanos" />
+    <e k="cameraDof_farSection" v="Parámetros lejanos" />
+    <e k="cameraDof_nearCoCRadius" v="Radio CoC cercano" />
+    <e k="cameraDof_nearBlurEnd" v="Fin desenfoque cercano" />
+    <e k="cameraDof_farCoCRadius" v="Radio CoC lejano" />
+    <e k="cameraDof_farBlurStart" v="Inicio desenfoque lejano" />
+    <e k="cameraDof_farBlurEnd" v="Fin desenfoque lejano" />
+  </elements>
+</l10n>

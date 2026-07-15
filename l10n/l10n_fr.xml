@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Ouvrir les paramètres" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Par défaut" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Véhicule 1ère personne" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Véhicule 3ème personne" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Joueur 1ère personne" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Joueur 3ème personne" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Utiliser le profil" />
+    <e k="cameraDof_nearEnabled" v="Flou de premier plan" />
+    <e k="cameraDof_applyToSky" v="Appliquer au ciel" />
+    <e k="cameraDof_nearSection" v="Paramètres proches" />
+    <e k="cameraDof_farSection" v="Paramètres lointains" />
+    <e k="cameraDof_nearCoCRadius" v="Rayon CoC proche" />
+    <e k="cameraDof_nearBlurEnd" v="Fin flou de premier plan" />
+    <e k="cameraDof_farCoCRadius" v="Rayon CoC lointain" />
+    <e k="cameraDof_farBlurStart" v="Début flou d'arrière-plan" />
+    <e k="cameraDof_farBlurEnd" v="Fin flou d'arrière-plan" />
+  </elements>
+</l10n>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Öppna inställningar" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Standard" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Fordon 1:a person" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Fordon 3:e person" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Spelare 1:a person" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Spelare 3:e person" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Använd profil" />
+    <e k="cameraDof_nearEnabled" v="Närsuddighet" />
+    <e k="cameraDof_applyToSky" v="Tillämpa på himmel" />
+    <e k="cameraDof_nearSection" v="Närparametrar" />
+    <e k="cameraDof_farSection" v="Fjärrparametrar" />
+    <e k="cameraDof_nearCoCRadius" v="När-CoC radie" />
+    <e k="cameraDof_nearBlurEnd" v="Slut på närsuddighet" />
+    <e k="cameraDof_farCoCRadius" v="Fjärr-CoC radie" />
+    <e k="cameraDof_farBlurStart" v="Start för fjärrsuddighet" />
+    <e k="cameraDof_farBlurEnd" v="Slut för fjärrsuddighet" />
+  </elements>
+</l10n>

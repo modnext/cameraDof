@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Otevřít nastavení" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Výchozí" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Vozidlo z 1. osoby" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Vozidlo ze 3. osoby" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Hráč z 1. osoby" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Hráč ze 3. osoby" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Použít profil" />
+    <e k="cameraDof_nearEnabled" v="Blízké rozostření" />
+    <e k="cameraDof_applyToSky" v="Použít na oblohu" />
+    <e k="cameraDof_nearSection" v="Parametry blízkého" />
+    <e k="cameraDof_farSection" v="Parametry dalekého" />
+    <e k="cameraDof_nearCoCRadius" v="Poloměr blízkého CoC" />
+    <e k="cameraDof_nearBlurEnd" v="Konec blízkého rozostření" />
+    <e k="cameraDof_farCoCRadius" v="Poloměr dalekého CoC" />
+    <e k="cameraDof_farBlurStart" v="Začátek dalekého rozostření" />
+    <e k="cameraDof_farBlurEnd" v="Konec dalekého rozostření" />
+  </elements>
+</l10n>

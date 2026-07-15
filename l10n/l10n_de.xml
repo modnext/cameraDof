@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Einstellungen öffnen" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Standardwerte" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Fahrzeug 1. Person" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Fahrzeug 3. Person" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Spieler 1. Person" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Spieler 3. Person" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Profil verwenden" />
+    <e k="cameraDof_nearEnabled" v="Vordergrundunschärfe" />
+    <e k="cameraDof_applyToSky" v="Auf Himmel anwenden" />
+    <e k="cameraDof_nearSection" v="Nah-Parameter" />
+    <e k="cameraDof_farSection" v="Fern-Parameter" />
+    <e k="cameraDof_nearCoCRadius" v="Nah-CoC-Radius" />
+    <e k="cameraDof_nearBlurEnd" v="Nahunschärfe-Ende" />
+    <e k="cameraDof_farCoCRadius" v="Fern-CoC-Radius" />
+    <e k="cameraDof_farBlurStart" v="Fernunschärfe-Start" />
+    <e k="cameraDof_farBlurEnd" v="Fernunschärfe-Ende" />
+  </elements>
+</l10n>

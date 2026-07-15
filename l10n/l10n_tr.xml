@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Ayarları Aç" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Varsayılan" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Araç 1. Şahıs" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Araç 3. Şahıs" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Oyuncu 1. Şahıs" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Oyuncu 3. Şahıs" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Profili Kullan" />
+    <e k="cameraDof_nearEnabled" v="Yakın Bulanıklık" />
+    <e k="cameraDof_applyToSky" v="Gökyüzüne Uygula" />
+    <e k="cameraDof_nearSection" v="Yakın Parametreleri" />
+    <e k="cameraDof_farSection" v="Uzak Parametreleri" />
+    <e k="cameraDof_nearCoCRadius" v="Yakın CoC Yarıçapı" />
+    <e k="cameraDof_nearBlurEnd" v="Yakın Bulanıklık Sonu" />
+    <e k="cameraDof_farCoCRadius" v="Uzak CoC Yarıçapı" />
+    <e k="cameraDof_farBlurStart" v="Uzak Bulanıklık Başlangıcı" />
+    <e k="cameraDof_farBlurEnd" v="Uzak Bulanıklık Sonu" />
+  </elements>
+</l10n>

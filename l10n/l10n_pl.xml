@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Otworz Ustawienia" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Domyslne" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Pojazd 1. osoba" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Pojazd 3. osoba" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Gracz 1. osoba" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Gracz 3. osoba" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Uzyj profilu" />
+    <e k="cameraDof_nearEnabled" v="Bliski blur" />
+    <e k="cameraDof_applyToSky" v="Zastosuj do nieba" />
+    <e k="cameraDof_nearSection" v="Bliskie parametry" />
+    <e k="cameraDof_farSection" v="Dalekie parametry" />
+    <e k="cameraDof_nearCoCRadius" v="Bliski promien CoC" />
+    <e k="cameraDof_nearBlurEnd" v="Koniec bliskiego blur" />
+    <e k="cameraDof_farCoCRadius" v="Daleki promien CoC" />
+    <e k="cameraDof_farBlurStart" v="Start dalekiego blur" />
+    <e k="cameraDof_farBlurEnd" v="Koniec dalekiego blur" />
+  </elements>
+</l10n>

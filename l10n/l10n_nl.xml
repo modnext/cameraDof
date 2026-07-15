@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Instellingen openen" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Standaard" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profiel" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Voertuig 1e persoon" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Voertuig 3e persoon" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Speler 1e persoon" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Speler 3e persoon" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Profiel gebruiken" />
+    <e k="cameraDof_nearEnabled" v="Nabijheidssagheid" />
+    <e k="cameraDof_applyToSky" v="Toepassen op lucht" />
+    <e k="cameraDof_nearSection" v="Nabijheidsparameters" />
+    <e k="cameraDof_farSection" v="Afstandsparameters" />
+    <e k="cameraDof_nearCoCRadius" v="Nabije CoC straal" />
+    <e k="cameraDof_nearBlurEnd" v="Einde nabijheidssagheid" />
+    <e k="cameraDof_farCoCRadius" v="Verre CoC straal" />
+    <e k="cameraDof_farBlurStart" v="Start afstandssagheid" />
+    <e k="cameraDof_farBlurEnd" v="Einde afstandssagheid" />
+  </elements>
+</l10n>

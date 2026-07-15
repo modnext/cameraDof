@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Actions -->
+    <e k="input_CAMERA_DOF_SETTINGS" v="Åpne innstillinger" />
+
+    <!-- General UI -->
+    <e k="cameraDof_dialogTitle" v="Camera DoF" />
+    <e k="cameraDof_resetProfile" v="Standard" />
+
+    <!-- Profiles -->
+    <e k="cameraDof_profile" v="Profil" />
+    <e k="cameraDof_profile_vehicleFirstPerson" v="Kjøretøy 1. person" />
+    <e k="cameraDof_profile_vehicleThirdPerson" v="Kjøretøy 3. person" />
+    <e k="cameraDof_profile_playerFirstPerson" v="Spiller 1. person" />
+    <e k="cameraDof_profile_playerThirdPerson" v="Spiller 3. person" />
+
+    <!-- Settings & Parameters -->
+    <e k="cameraDof_enabled" v="Bruk profil" />
+    <e k="cameraDof_nearEnabled" v="Nærblurring" />
+    <e k="cameraDof_applyToSky" v="Bruk på himmel" />
+    <e k="cameraDof_nearSection" v="Nær-parametere" />
+    <e k="cameraDof_farSection" v="Fjern-parametere" />
+    <e k="cameraDof_nearCoCRadius" v="Nær-CoC radius" />
+    <e k="cameraDof_nearBlurEnd" v="Slutt på nærblurring" />
+    <e k="cameraDof_farCoCRadius" v="Fjern-CoC radius" />
+    <e k="cameraDof_farBlurStart" v="Start på fjernblurring" />
+    <e k="cameraDof_farBlurEnd" v="Slutt på fjernblurring" />
+  </elements>
+</l10n>
