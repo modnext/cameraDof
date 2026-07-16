@@ -472,14 +472,15 @@ function CameraDofSystem:applyAllKnownCameras()
 end
 
 ---Install class hooks once
+---
+---The guard flag has to live on the same objects that are patched. The mod's Lua
+---environment is re-created on every mission load, so `CameraDofSystem` (and any
+---flag on it) is a fresh table each time, while the engine classes below persist
+---for the whole process along with the wrappers already installed on them.
 function CameraDofSystem:installPatches()
-  if CameraDofSystem.patchesInstalled then
-    return
-  end
+  if CameraManager ~= nil and not CameraManager.cameraDofPatched then
+    CameraManager.cameraDofPatched = true
 
-  CameraDofSystem.patchesInstalled = true
-
-  if CameraManager ~= nil then
     CameraManager.setActiveCamera = Utils.appendedFunction(CameraManager.setActiveCamera, function(_, cameraNode)
       if g_cameraDofSystem ~= nil then
         g_cameraDofSystem:onActiveCameraChanged(cameraNode)
@@ -487,7 +488,9 @@ function CameraDofSystem:installPatches()
     end)
   end
 
-  if PlayerCamera ~= nil then
+  if PlayerCamera ~= nil and not PlayerCamera.cameraDofPatched then
+    PlayerCamera.cameraDofPatched = true
+
     PlayerCamera.initialiseCameraNodes = Utils.appendedFunction(PlayerCamera.initialiseCameraNodes, function(playerCamera)
       if g_cameraDofSystem ~= nil then
         g_cameraDofSystem:assignPlayerCamera(playerCamera)
@@ -495,7 +498,9 @@ function CameraDofSystem:installPatches()
     end)
   end
 
-  if VehicleCamera ~= nil then
+  if VehicleCamera ~= nil and not VehicleCamera.cameraDofPatched then
+    VehicleCamera.cameraDofPatched = true
+
     VehicleCamera.loadFromXML = Utils.overwrittenFunction(VehicleCamera.loadFromXML, function(vehicleCamera, superFunc, xmlFile, key, savegame, cameraIndex)
       local result = superFunc(vehicleCamera, xmlFile, key, savegame, cameraIndex)
 
@@ -514,7 +519,9 @@ function CameraDofSystem:installPatches()
     end)
   end
 
-  if PlayerInputComponent ~= nil then
+  if PlayerInputComponent ~= nil and not PlayerInputComponent.cameraDofPatched then
+    PlayerInputComponent.cameraDofPatched = true
+
     PlayerInputComponent.registerGlobalPlayerActionEvents = Utils.appendedFunction(PlayerInputComponent.registerGlobalPlayerActionEvents, function(playerInputComponent, contextName)
       if g_cameraDofSystem ~= nil then
         g_cameraDofSystem:registerGlobalPlayerActionEvents(playerInputComponent, contextName)
