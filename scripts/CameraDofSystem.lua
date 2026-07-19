@@ -472,11 +472,6 @@ function CameraDofSystem:applyAllKnownCameras()
 end
 
 ---Install class hooks once
----
----The guard flag has to live on the same objects that are patched. The mod's Lua
----environment is re-created on every mission load, so `CameraDofSystem` (and any
----flag on it) is a fresh table each time, while the engine classes below persist
----for the whole process along with the wrappers already installed on them.
 function CameraDofSystem:installPatches()
   if CameraManager ~= nil and not CameraManager.cameraDofPatched then
     CameraManager.cameraDofPatched = true
