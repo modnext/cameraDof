@@ -3,8 +3,8 @@ GAME_NAME = FarmingSimulator2025
 MOD_NAME = FS25_cameraDof
 
 ## Paths
-SOURCE_DIR = C:/Mods/$(GAME_NAME)/$(MOD_NAME)
-DEST_DIR   = C:/Mods/$(GAME_NAME)
+SOURCE_DIR = $(CURDIR)
+DEST_DIR   = $(patsubst %/,%,$(dir $(CURDIR)))
 
 ## Package contents
 FILES  = modDesc.xml icon_cameraDof.dds
@@ -17,7 +17,7 @@ REL_ZIP = $(MOD_NAME).zip
 
 ## Tools
 PS  = powershell -NoProfile -ExecutionPolicy Bypass -Command
-ZIP = zip -r
+ZIP = tar -a -c -f
 
 .PHONY: all dev build clean
 
