@@ -21,7 +21,7 @@ Hotkeys:
 - Press 'F6' to open the Camera DoF settings dialog.
 
 Changelog Version 1.0.0.1:
-- Prevented duplicate camera hooks after a mod reload.
+- Improved camera hook handling during repeated mission loads.
 
 For more info, bug reports, or to contribute, check out GitHub (modnext/cameraDof).
 ]]></en>
@@ -37,8 +37,8 @@ Funktionen:
 Tastenkombinationen:
 - Drücke 'F6', um den Einstellungsdialog für die Kamera-Unschärfe zu öffnen.
 
-Changelog Version 1.0.0.1:
-- Doppelte Kamera-Hooks nach dem Neuladen eines Mods verhindert.
+Änderungsprotokoll Version 1.0.0.1:
+- Verbesserte Verwaltung der Kamera-Hooks beim wiederholten Laden von Missionen.
 
 Für mehr Infos, Fehlermeldungen oder kleine Beiträge schau einfach auf GitHub vorbei (modnext/cameraDof).
 ]]></de>
@@ -54,8 +54,8 @@ Fonctionnalités :
 Raccourcis clavier :
 - Appuyez sur 'F6' pour ouvrir la boîte de dialogue des réglages du flou de caméra.
 
-Changelog Version 1.0.0.1 :
-- Empêche la duplication des hooks de caméra après le rechargement d'un mod.
+Journal des modifications – version 1.0.0.1 :
+- Amélioration de la gestion des hooks de caméra lors du chargement répété des missions.
 
 Pour plus d'infos, signaler un bug ou apporter votre aide, rendez-vous sur GitHub (modnext/cameraDof).
 ]]></fr>
@@ -71,8 +71,8 @@ Funkcje:
 Skróty klawiszowe:
 - Wciśnij 'F6', aby otworzyć okno ustawień rozmycia kamery.
 
-Changelog Version 1.0.0.1:
-- Zapobiegnięto duplikowaniu hooków kamery po przeładowaniu moda.
+Lista zmian w wersji 1.0.0.1:
+- Ulepszono obsługę hooków kamery podczas wielokrotnego ładowania misji.
 
 Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moim GitHubie (modnext/cameraDof).
 ]]></pl>
@@ -88,8 +88,8 @@ Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moi
 Горячие клавиши:
 - Нажмите 'F6', чтобы открыть диалоговое окно настроек размытия камеры.
 
-Changelog Version 1.0.0.1:
-- Предотвращено дублирование хуков камеры после перезагрузки мода.
+Список изменений, версия 1.0.0.1:
+- Улучшено управление хуками камеры при повторной загрузке миссий.
 
 Для получения дополнительной информации, сообщений об ошибках или участия загляните на GitHub (modnext/cameraDof).
 ]]></ru>
