@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="110">
   <author>aaw3k</author>
-  <version>1.0.0.0</version>
+  <version>1.0.0.1</version>
 
   <title>
     <en>Camera DoF</en>
@@ -20,6 +20,9 @@ Features:
 Hotkeys:
 - Press 'F6' to open the Camera DoF settings dialog.
 
+Changelog Version 1.0.0.1:
+- Prevented duplicate camera hooks after a mod reload.
+
 For more info, bug reports, or to contribute, check out GitHub (modnext/cameraDof).
 ]]></en>
     <de><![CDATA[
@@ -33,6 +36,9 @@ Funktionen:
 
 Tastenkombinationen:
 - Drücke 'F6', um den Einstellungsdialog für die Kamera-Unschärfe zu öffnen.
+
+Changelog Version 1.0.0.1:
+- Doppelte Kamera-Hooks nach dem Neuladen eines Mods verhindert.
 
 Für mehr Infos, Fehlermeldungen oder kleine Beiträge schau einfach auf GitHub vorbei (modnext/cameraDof).
 ]]></de>
@@ -48,6 +54,9 @@ Fonctionnalités :
 Raccourcis clavier :
 - Appuyez sur 'F6' pour ouvrir la boîte de dialogue des réglages du flou de caméra.
 
+Changelog Version 1.0.0.1 :
+- Empêche la duplication des hooks de caméra après le rechargement d'un mod.
+
 Pour plus d'infos, signaler un bug ou apporter votre aide, rendez-vous sur GitHub (modnext/cameraDof).
 ]]></fr>
     <pl><![CDATA[
@@ -62,6 +71,9 @@ Funkcje:
 Skróty klawiszowe:
 - Wciśnij 'F6', aby otworzyć okno ustawień rozmycia kamery.
 
+Changelog Version 1.0.0.1:
+- Zapobiegnięto duplikowaniu hooków kamery po przeładowaniu moda.
+
 Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moim GitHubie (modnext/cameraDof).
 ]]></pl>
     <ru><![CDATA[
@@ -75,6 +87,9 @@ Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moi
 
 Горячие клавиши:
 - Нажмите 'F6', чтобы открыть диалоговое окно настроек размытия камеры.
+
+Changelog Version 1.0.0.1:
+- Предотвращено дублирование хуков камеры после перезагрузки мода.
 
 Для получения дополнительной информации, сообщений об ошибках или участия загляните на GitHub (modnext/cameraDof).
 ]]></ru>
