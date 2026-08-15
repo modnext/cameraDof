@@ -1,7 +1,7 @@
 --
 -- CameraDofDialog
 --
--- Author: aaw3k
+-- Author: Sławek Jaskulski
 -- Copyright (C) ModNext, All Rights Reserved.
 --
 
