@@ -1,15 +1,14 @@
 ## Config
-GAME_NAME = FarmingSimulator2025
 MOD_NAME = FS25_cameraDof
-
-## Paths
-SOURCE_DIR = C:/Mods/$(GAME_NAME)/$(MOD_NAME)
-DEST_DIR   = C:/Mods/$(GAME_NAME)
 
 ## Package contents
 FILES  = modDesc.xml icon_cameraDof.dds
 DIRS   = scripts l10n gui
 PKG    = $(FILES) $(DIRS)
+
+## Paths
+SOURCE_DIR = $(CURDIR)
+DEST_DIR   = $(patsubst %/,%,$(dir $(CURDIR)))
 
 ## Artifacts
 DEV_ZIP = $(MOD_NAME)_dev.zip
@@ -17,7 +16,7 @@ REL_ZIP = $(MOD_NAME).zip
 
 ## Tools
 PS  = powershell -NoProfile -ExecutionPolicy Bypass -Command
-ZIP = zip -r
+ZIP = tar -a -c -f
 
 .PHONY: all dev build clean
 
