@@ -1,7 +1,7 @@
 --
 -- CameraDofSystem
 --
--- Author: aaw3k
+-- Author: Sławek Jaskulski
 -- Copyright (C) ModNext, All Rights Reserved.
 --
 
@@ -82,7 +82,6 @@ function CameraDofSystem.new()
 
   self:resetToDefaults(false)
   self:loadFromXMLFile()
-  self:installPatches()
 
   return self
 end
@@ -471,58 +470,6 @@ function CameraDofSystem:applyAllKnownCameras()
   self:applyActiveCamera()
 end
 
----Install class hooks once
-function CameraDofSystem:installPatches()
-  if CameraDofSystem.patchesInstalled then
-    return
-  end
-
-  CameraDofSystem.patchesInstalled = true
-
-  if CameraManager ~= nil then
-    CameraManager.setActiveCamera = Utils.appendedFunction(CameraManager.setActiveCamera, function(_, cameraNode)
-      if g_cameraDofSystem ~= nil then
-        g_cameraDofSystem:onActiveCameraChanged(cameraNode)
-      end
-    end)
-  end
-
-  if PlayerCamera ~= nil then
-    PlayerCamera.initialiseCameraNodes = Utils.appendedFunction(PlayerCamera.initialiseCameraNodes, function(playerCamera)
-      if g_cameraDofSystem ~= nil then
-        g_cameraDofSystem:assignPlayerCamera(playerCamera)
-      end
-    end)
-  end
-
-  if VehicleCamera ~= nil then
-    VehicleCamera.loadFromXML = Utils.overwrittenFunction(VehicleCamera.loadFromXML, function(vehicleCamera, superFunc, xmlFile, key, savegame, cameraIndex)
-      local result = superFunc(vehicleCamera, xmlFile, key, savegame, cameraIndex)
-
-      if result and g_cameraDofSystem ~= nil then
-        g_cameraDofSystem:assignVehicleCamera(vehicleCamera)
-      end
-
-      return result
-    end)
-
-    VehicleCamera.onActivate = Utils.appendedFunction(VehicleCamera.onActivate, function(vehicleCamera)
-      if g_cameraDofSystem ~= nil then
-        g_cameraDofSystem:assignVehicleCamera(vehicleCamera)
-        g_cameraDofSystem:applyActiveCamera()
-      end
-    end)
-  end
-
-  if PlayerInputComponent ~= nil then
-    PlayerInputComponent.registerGlobalPlayerActionEvents = Utils.appendedFunction(PlayerInputComponent.registerGlobalPlayerActionEvents, function(playerInputComponent, contextName)
-      if g_cameraDofSystem ~= nil then
-        g_cameraDofSystem:registerGlobalPlayerActionEvents(playerInputComponent, contextName)
-      end
-    end)
-  end
-end
-
 ---Register global player action events for all player input contexts
 function CameraDofSystem:registerGlobalPlayerActionEvents(playerInputComponent, contextName)
   if playerInputComponent == nil or playerInputComponent.player == nil or not playerInputComponent.player.isOwner then
@@ -584,12 +531,20 @@ end
 
 ---Called by mod event listener on map load
 function CameraDofSystem:loadMap()
+  if CameraDofSystemExtension.getActiveSystem() ~= self then
+    return
+  end
+
+  CameraDofSystemExtension.install(self)
   self:applyAllKnownCameras()
 end
 
 ---Called by mod event listener on map delete
 function CameraDofSystem:deleteMap()
-  self:saveIfDirty()
+  if CameraDofSystemExtension.getActiveSystem() == self then
+    self:saveIfDirty()
+  end
+
   self:unregisterActionEvents()
   self.lastActiveCameraNode = nil
 end
@@ -597,6 +552,10 @@ end
 ---Poll active camera as a fallback for camera changes not using CameraManager hooks
 -- @param float dt delta time
 function CameraDofSystem:update(dt)
+  if CameraDofSystemExtension.getActiveSystem() ~= self then
+    return
+  end
+
   if g_cameraManager ~= nil and g_cameraManager.activeCameraNode ~= nil and g_cameraManager.activeCameraNode ~= self.lastActiveCameraNode then
     self:onActiveCameraChanged(g_cameraManager.activeCameraNode)
   end

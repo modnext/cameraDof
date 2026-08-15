@@ -87,6 +87,7 @@ Więcej informacji, zgłaszanie błędów czy pomoc w rozwoju znajdziecie na moi
 
   <extraSourceFiles>
     <sourceFile filename="scripts/CameraDofSystem.lua" />
+    <sourceFile filename="scripts/extensions/CameraDofSystemExtension.lua" />
     <sourceFile filename="scripts/gui/CameraDofDialog.lua" />
   </extraSourceFiles>
 
